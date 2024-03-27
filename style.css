@@ -1,0 +1,339 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+*{
+    font-family: 'Poppins';
+    margin: 0;
+    padding: 0;
+}
+
+.Container-1{
+    background: linear-gradient(135deg, #0093E9 0%, #80D0c7 100%);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    height: 100vh;
+}
+.Container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 55vh;
+
+}
+.Title-Main{
+    text-align: center;
+    height: 150px;
+    padding: 0;
+    margin: 0;
+    position: fixed;
+    z-index: -1;
+
+}
+.Image-Character{
+    display: flex;
+    margin-left: 3rem;
+
+}
+
+.Fortnite-Character-1{
+    height: 24rem;
+    margin-top: -6rem;
+    left: 4rem;
+    position: relative;
+}
+.Fortnite-Character-2{
+    height: 28rem;
+    margin-left: -10rem;
+    margin-top: -8rem;
+    left: 4rem;
+    position: relative;
+}
+.Fortnite-Character-3{
+    height: 40rem;
+    margin-left: -10rem;
+    margin-top: -13rem;
+}
+.Fortnite-Character-4{
+    height: 32rem;
+    position: relative;
+    right: 17rem;
+    top: -10rem;
+
+}
+.Fortnite-Character-5{
+    height: 25rem;
+    position: relative;
+    right: 32rem;
+    top: -7rem;
+}
+@keyframes bobbing{
+    0%, 100%{
+        transform: translateY(0);
+    }
+    50%{
+        transform: translateY(-10px);
+    }
+}
+    .Fortnite-Character-1,.Fortnite-Character-2,.Fortnite-Character-3,.Fortnite-Character-4, .Fortnite-Character-5{
+        animation: bobbing 3s ease-in-out infinite;
+    }
+    .Fortnite-Character-1{
+        animation-delay: 1s;
+    }
+    .Fortnite-Character-2{
+        animation-delay: 0s;
+    }
+    .Fortnite-Character-3{
+        animation-delay: 2s;
+    }
+    .Fortnite-Character-4{
+        animation-delay: 0s;
+    }
+    .Fortnite-Character-5{
+        animation-delay: 1s;
+    }
+
+
+
+.Container-2{
+    background: linear-gradient(90deg, rgba(0,0,0,1) 0%, rgba(48,48,48)100%);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    height: 60vh;
+    display: flex;
+    justify-content: space-between;
+    padding: 10rem;
+}
+
+.Fortnite-Character-6{
+    height: 30rem;
+}
+
+.Sub-img img{
+    height: 70px;
+    margin-right: 2px;
+}
+
+.Fortnite-Character-same{
+    border: 2px solid yellow; 
+}
+.Fortnite-Character-7,
+.Fortnite-Character-8,
+.Fortnite-Character-9,
+.Fortnite-Character-10,
+.Fortnite-Character-11{
+    border: 2px solid black;
+}
+
+.Fortnite-Character-7:hover,
+.Fortnite-Character-8:hover,
+.Fortnite-Character-9:hover,
+.Fortnite-Character-10:hover,
+.Fortnite-Character-11:hover{
+    border-color: yellow;
+}
+
+
+.Side-1{
+    display: inline;
+    flex: 1;
+    order: 1;
+    padding: 20px;
+}
+
+.Side-2{
+    display: inline;
+    flex: 1;
+    order: 2;
+    padding: 20px;
+    justify-content: center;
+    text-align: center;
+    margin-top: 10rem;
+}
+
+.Disc{
+    font-family: 'Poppins', sans-serif;
+    font-size: 25px;
+    color: white;
+}
+
+
+body{
+    border-color: #1a1a1a;
+}
+
+
+
+.ButtonDownload{
+    display: inline-block;
+    position: relative;
+    padding: 10px 25px;
+    background-color: #e2e614;
+    color: white;
+    font-family: sans-serif;
+    text-decoration: none;
+    font-size: 0.9em;
+    text-align: center;
+    text-indent: 15px;
+}
+
+.ButtonDownload:hover{
+    background-color: #333;
+    color: whiet;
+}
+.ButtonDownload:before, .ButtonDownload:after{
+    content: ' ';
+    display: block;
+    position: absolute;
+    left: 15px;
+    top: 52%;
+}
+.ButtonDownload:before{
+    width: 10px;
+    height: 2px;
+    border-style: solid;
+    border-width: 0 2px 2px;
+}
+.ButtonDownload:after{
+    width: 0;
+    height: 0;
+    margin-left: 3px;
+    margin-top: -7px;
+    border-style: solid;
+    border-width: 4px 4px 0 4px;
+    border-color: transparent;
+    border-top-color: inherit;
+    animation: downloadArrow 2s linear infinite;
+    animation-play-state: paused;
+}
+.ButtonDownload:hover:before{
+    border-color: #b8c713;
+}
+.ButtonDownload:hover:after{
+    border-top-color: #bbc713;
+    animation-play-state: running;
+
+}
+
+@keyframes downloadArrow {
+    
+    0%{
+        margin-top: -7px;
+        opacity: 1;
+
+    }
+    0.001%{
+        margin-top: -15px;
+        opacity: 0;
+    }
+    50%{
+        opacity: 1;
+    }
+    100%{
+        margin-top: 0;
+        opacity: 0;
+    }
+}
+
+
+
+
+
+
+
+.Container-3{
+    background: linear-gradient(135deg, #0093E9 0%, #80D0c7 100%);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    height: 40vh;
+    justify-content: space-between;
+    padding: 10rem;
+    left: 100px;
+}
+
+.email{
+    background: hsl(0deg 0% 100%);
+    box-shadow:  0 0 2em hsl(231deg 62% 94%);
+    padding: 1em;
+    display: flex;
+    flex-direction: column;
+    gap: 0.5em;
+    border-radius: 20px;
+    color: hsl(0deg 0% 30%);
+    margin-left: 30rem;
+    margin-right: 30rem;
+    margin-bottom: 1em;
+}
+.email-box{
+    border: none;
+}
+.password{
+    background: hsl(0deg 0% 100%);
+    box-shadow:  0 0 2em hsl(231deg 62% 94%);
+    padding: 1em;
+    display: flex;
+    flex-direction: column;
+    gap: 0.5em;
+    border-radius: 20px;
+    color: hsl(0deg 0% 30%);
+    margin-left: 30rem;
+    margin-right: 30rem;
+    margin-bottom: 1em;
+}
+.pas{
+    border: none;
+}
+.login{
+    padding: 1em;
+    background: hsl(233deg 36% 38%);
+    color: hsl(0 0 100);
+    border: none;
+    border-radius: 30px;
+    font-weight: 600;
+    margin-left: 30rem;
+    margin-right: 30rem;
+    margin-bottom: 1em;
+}
+
+
+.footer{
+    display: flex;
+    font-family: 0.7em;
+    color: hsl(0deg 0% 37%);
+    gap: 14em;
+    padding-bottom: 10em;
+    margin-left: 30rme;
+    margin-right: 30rem;
+}
+
+.footer span{
+    cursor: pointer;
+}
+
+
+
+
+
+
+
+
+
+
+
+.Download:hover{
+    background-color: rgb(255, 255, 255);
+}
+
+    //@keyframes fadeInEffect{
+        from{
+            opacity: 0.2;;
+        }
+        to{
+            opacity: 1;
+        }
+    }
+    *{
+        animation-name: fadeInEffect;
+        animation-duration: 2s;
+        animation-fill-mode: forwards;
+        will-change: opacity;
+    }
+
